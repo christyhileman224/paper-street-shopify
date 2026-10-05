@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ page_title }}{% unless page_title contains shop.name %} – {{ shop.name }}{% endunless %}</title>
+  {{ content_for_header }}
+  {{ 'paper-street.css' | asset_url | stylesheet_tag }}
+</head>
+<body>
+  <header class="ps-header">
+    <a class="ps-brand" href="{{ routes.root_url }}">PAPER STREET <span>CARD CO.</span></a>
+    <nav><a href="{{ routes.all_products_collection_url }}">Shop</a><a href="/collections">Collections</a><a href="/pages/about">About</a><a href="/pages/contact">Contact</a></nav>
+    <a href="{{ routes.cart_url }}">Cart ({{ cart.item_count }})</a>
+  </header>
+  <main id="MainContent">{{ content_for_layout }}</main>
+  <footer class="ps-footer">© {{ 'now' | date: '%Y' }} {{ shop.name }} · Buy. Sell. Trade. Collect.</footer>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<section class="ps-section"><h2>{{ section.settings.heading }}</h2><div class="ps-grid">
+{% for block in section.blocks %}<a class="ps-card" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>{{ block.settings.title }}</a>{% endfor %}
+</div></section>
+{% schema %}
+{"name":"Paper Street categories","settings":[{"type":"text","id":"heading","label":"Heading","default":"Shop the Street"}],"blocks":[{"type":"category","name":"Category","settings":[{"type":"text","id":"title","label":"Title","default":"Graded Cards"},{"type":"url","id":"link","label":"Link"}]}],"max_blocks":6,"presets":[{"name":"Paper Street categories","blocks":[{"type":"category","settings":{"title":"Graded Cards"}},{"type":"category","settings":{"title":"Raw Singles"}},{"type":"category","settings":{"title":"Autographs"}},{"type":"category","settings":{"title":"Wax & Breaks"}},{"type":"category","settings":{"title":"Memorabilia"}},{"type":"category","settings":{"title":"Consignment"}}]}]}
+{% endschema %}
