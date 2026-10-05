@@ -86,10 +86,68 @@
         "eyebrow": "SHOP BY CATEGORY",
         "heading": "Shop the Street"
       }
+    },
+    "paper_street_story_rRAMrd": {
+      "type": "paper-street-story",
+      "name": "Paper Street story",
+      "settings": {
+        "eyebrow": "ABOUT PAPER STREET",
+        "heading": "FROM THE SHOW FLOOR TO YOUR DOOR.",
+        "text": "<p>Paper Street Card Co. is a collectors shop specializing in sports cards, autographs, memorabilia, wax and more. Find us at card shows and online—always buying, selling and trading.</p>",
+        "button_label": "Learn more",
+        "button_link": ""
+      }
+    },
+    "paper_street_trust_bar_Lem6UK": {
+      "type": "paper-street-trust-bar",
+      "blocks": {
+        "item_7DAy4R": {
+          "type": "item",
+          "settings": {
+            "icon": "▱",
+            "heading": "Secure Shipping",
+            "text": "Packed with care"
+          }
+        },
+        "item_78K6KM": {
+          "type": "item",
+          "settings": {
+            "icon": "◇",
+            "heading": "Trusted & Authentic",
+            "text": "Quality you can count on"
+          }
+        },
+        "item_jzdYPn": {
+          "type": "item",
+          "settings": {
+            "icon": "↔",
+            "heading": "Buy · Sell · Trade",
+            "text": "Always looking for collections"
+          }
+        },
+        "item_VgrVUF": {
+          "type": "item",
+          "settings": {
+            "icon": "⌂",
+            "heading": "Shows & Events",
+            "text": "Follow us for upcoming shows"
+          }
+        }
+      },
+      "block_order": [
+        "item_7DAy4R",
+        "item_78K6KM",
+        "item_jzdYPn",
+        "item_VgrVUF"
+      ],
+      "name": "Paper Street trust bar",
+      "settings": {}
     }
   },
   "order": [
     "hero",
-    "categories"
+    "categories",
+    "paper_street_story_rRAMrd",
+    "paper_street_trust_bar_Lem6UK"
   ]
 }
