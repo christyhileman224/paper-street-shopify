@@ -1,0 +1,26 @@
+<section class="ps-trust">
+  {% for block in section.blocks %}
+    <div class="ps-trust__item" {{ block.shopify_attributes }}>
+      <span class="ps-trust__icon" aria-hidden="true">{{ block.settings.icon }}</span>
+      <div><strong>{{ block.settings.heading }}</strong><small>{{ block.settings.text }}</small></div>
+    </div>
+  {% endfor %}
+</section>
+{% schema %}
+{
+  "name":"Paper Street trust bar",
+  "settings":[],
+  "blocks":[{"type":"item","name":"Trust item","settings":[
+    {"type":"text","id":"icon","label":"Icon / symbol","default":"◇"},
+    {"type":"text","id":"heading","label":"Heading","default":"Secure Shipping"},
+    {"type":"text","id":"text","label":"Text","default":"Packed with care"}
+  ]}],
+  "max_blocks":4,
+  "presets":[{"name":"Paper Street trust bar","blocks":[
+    {"type":"item","settings":{"icon":"▱","heading":"Secure Shipping","text":"Packed with care"}},
+    {"type":"item","settings":{"icon":"◇","heading":"Trusted & Authentic","text":"Quality you can count on"}},
+    {"type":"item","settings":{"icon":"↔","heading":"Buy · Sell · Trade","text":"Always looking for collections"}},
+    {"type":"item","settings":{"icon":"⌂","heading":"Shows & Events","text":"Follow us for upcoming shows"}}
+  ]}]
+}
+{% endschema %}

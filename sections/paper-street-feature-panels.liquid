@@ -1,0 +1,36 @@
+<section class="ps-section ps-feature-panels">
+  <div class="ps-feature-grid">
+    {% for block in section.blocks %}
+      <a class="ps-feature" href="{{ block.settings.link | default: '#' }}" {{ block.shopify_attributes }}>
+        {% if block.settings.image != blank %}
+          {{ block.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', class: 'ps-feature__image', alt: block.settings.heading }}
+        {% endif %}
+        <span class="ps-feature__shade"></span>
+        <span class="ps-feature__content">
+          <strong>{{ block.settings.heading }}</strong>
+          {% if block.settings.text != blank %}<small>{{ block.settings.text }}</small>{% endif %}
+          <span class="ps-feature__cta">{{ block.settings.button_label }} →</span>
+        </span>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+{% schema %}
+{
+  "name":"Paper Street feature panels",
+  "settings":[],
+  "blocks":[{"type":"panel","name":"Feature panel","settings":[
+    {"type":"image_picker","id":"image","label":"Image"},
+    {"type":"text","id":"heading","label":"Heading","default":"Featured Slabs"},
+    {"type":"text","id":"text","label":"Subheading","default":"Iconic players. Investment grade."},
+    {"type":"text","id":"button_label","label":"Button label","default":"Shop now"},
+    {"type":"url","id":"link","label":"Link"}
+  ]}],
+  "max_blocks":3,
+  "presets":[{"name":"Paper Street feature panels","blocks":[
+    {"type":"panel","settings":{"heading":"Featured Slabs","text":"Iconic players. Investment grade.","button_label":"Shop graded"}},
+    {"type":"panel","settings":{"heading":"Autographed Memorabilia","text":"Helmets, jerseys, footballs & more.","button_label":"Shop autographs"}},
+    {"type":"panel","settings":{"heading":"Wax & Breaks","text":"Sealed product. Big hits.","button_label":"Shop wax"}}
+  ]}]
+}
+{% endschema %}

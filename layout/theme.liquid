@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b0d0e">
   <title>{{ page_title }}{% unless page_title contains shop.name %} – {{ shop.name }}{% endunless %}</title>
   {{ content_for_header }}
   {{ 'paper-street.css' | asset_url | stylesheet_tag }}
@@ -10,10 +11,21 @@
 <body>
   <header class="ps-header">
     <a class="ps-brand" href="{{ routes.root_url }}">PAPER STREET <span>CARD CO.</span></a>
-    <nav><a href="{{ routes.all_products_collection_url }}">Shop</a><a href="/collections">Collections</a><a href="/pages/about">About</a><a href="/pages/contact">Contact</a></nav>
-    <a href="{{ routes.cart_url }}">Cart ({{ cart.item_count }})</a>
+    <nav class="ps-nav" aria-label="Main navigation">
+      <a href="{{ routes.all_products_collection_url }}">Shop</a>
+      <a href="/collections">Collections</a>
+      <a href="/pages/about">About</a>
+      <a href="/pages/contact">Contact</a>
+    </nav>
+    <div class="ps-header__actions">
+      <a class="ps-search" href="{{ routes.search_url }}" aria-label="Search">⌕ <span>Search</span></a>
+      <a href="{{ routes.cart_url }}">Cart ({{ cart.item_count }})</a>
+    </div>
   </header>
   <main id="MainContent">{{ content_for_layout }}</main>
-  <footer class="ps-footer">© {{ 'now' | date: '%Y' }} {{ shop.name }} · Buy. Sell. Trade. Collect.</footer>
+  <footer class="ps-footer">
+    <strong>PAPER STREET CARD CO.</strong>
+    <span>© {{ 'now' | date: '%Y' }} {{ shop.name }} · Buy. Sell. Trade. Collect.</span>
+  </footer>
 </body>
 </html>

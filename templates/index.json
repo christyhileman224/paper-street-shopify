@@ -1,1 +1,10 @@
-{"sections":{"hero":{"type":"paper-street-hero","settings":{}},"categories":{"type":"paper-street-categories","settings":{}}},"order":["hero","categories"]}
+{
+  "sections": {
+    "hero": {"type":"paper-street-hero","settings":{}},
+    "categories": {"type":"paper-street-categories","settings":{}},
+    "features": {"type":"paper-street-feature-panels","settings":{}},
+    "story": {"type":"paper-street-story","settings":{}},
+    "trust": {"type":"paper-street-trust-bar","settings":{}}
+  },
+  "order": ["hero","categories","features","story","trust"]
+}

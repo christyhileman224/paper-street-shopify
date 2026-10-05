@@ -1,11 +1,14 @@
-<section class="ps-hero"{% if section.settings.image != blank %} style="background-image:url('{{ section.settings.image | image_url: width: 2200 }}')"{% endif %}>
+<section class="ps-hero"{% if section.settings.image != blank %} style="background-image:url('{{ section.settings.image | image_url: width: 2400 }}')"{% endif %}>
   <div class="ps-hero__inner">
     <div class="ps-kicker">{{ section.settings.kicker }}</div>
     <h1>{{ section.settings.heading }}</h1>
     <p>{{ section.settings.text }}</p>
-    {% if section.settings.button_label != blank %}<a class="ps-btn ps-btn--primary" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>{% endif %}
-    {% if section.settings.button_2_label != blank %}<a class="ps-btn" href="{{ section.settings.button_2_link }}">{{ section.settings.button_2_label }}</a>{% endif %}
+    <div class="ps-hero__buttons">
+      {% if section.settings.button_label != blank %}<a class="ps-btn ps-btn--primary" href="{{ section.settings.button_link | default: '#' }}">{{ section.settings.button_label }} →</a>{% endif %}
+      {% if section.settings.button_2_label != blank %}<a class="ps-btn" href="{{ section.settings.button_2_link | default: '#' }}">{{ section.settings.button_2_label }} →</a>{% endif %}
+    </div>
   </div>
+  <div class="ps-hero__dots" aria-hidden="true"><span></span><span></span><span></span></div>
 </section>
 {% schema %}
 {"name":"Paper Street hero","settings":[{"type":"image_picker","id":"image","label":"Background image"},{"type":"text","id":"kicker","label":"Kicker","default":"BUY · SELL · TRADE · COLLECT"},{"type":"text","id":"heading","label":"Heading","default":"PAPER STREET CARD CO."},{"type":"textarea","id":"text","label":"Text","default":"Sports cards, autographs, memorabilia, wax and more. From the show floor to your front door."},{"type":"text","id":"button_label","label":"Primary button","default":"Shop cards"},{"type":"url","id":"button_link","label":"Primary link"},{"type":"text","id":"button_2_label","label":"Secondary button","default":"Shop memorabilia"},{"type":"url","id":"button_2_link","label":"Secondary link"}],"presets":[{"name":"Paper Street hero"}]}
