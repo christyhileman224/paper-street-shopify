@@ -24,6 +24,64 @@
     },
     "categories": {
       "type": "paper-street-categories",
+      "blocks": {
+        "category_ymHNni": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/Consignment.jpg",
+            "title": "Consignment",
+            "link": ""
+          }
+        },
+        "category_Dipa4N": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/memorbelia.jpg",
+            "title": "Memorabilia",
+            "link": ""
+          }
+        },
+        "category_pBHRqL": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/wax.jpg",
+            "title": "Wax & Breaks",
+            "link": ""
+          }
+        },
+        "category_g4tepQ": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/autos.jpg",
+            "title": "Autographs",
+            "link": ""
+          }
+        },
+        "category_6hcfm3": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/raw_single.jpg",
+            "title": "Raw Singles",
+            "link": ""
+          }
+        },
+        "category_TnJ9RE": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/slabs.jpg",
+            "title": "Graded Cards",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "category_ymHNni",
+        "category_Dipa4N",
+        "category_pBHRqL",
+        "category_g4tepQ",
+        "category_6hcfm3",
+        "category_TnJ9RE"
+      ],
       "settings": {
         "eyebrow": "SHOP BY CATEGORY",
         "heading": "Shop the Street"
