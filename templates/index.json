@@ -1,10 +1,37 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "hero": {"type":"paper-street-hero","settings":{}},
-    "categories": {"type":"paper-street-categories","settings":{}},
-    "features": {"type":"paper-street-feature-panels","settings":{}},
-    "story": {"type":"paper-street-story","settings":{}},
-    "trust": {"type":"paper-street-trust-bar","settings":{}}
+    "hero": {
+      "type": "paper-street-hero",
+      "settings": {
+        "image": "shopify://shop_images/shop_front.jpg",
+        "kicker": "BUY · SELL · TRADE · COLLECT",
+        "heading": "PAPER STREET CARD CO.",
+        "text": "Sports cards, autographs, memorabilia, wax and more. From the show floor to your front door.",
+        "button_label": "Shop cards",
+        "button_link": "",
+        "button_2_label": "Shop memorabilia",
+        "button_2_link": ""
+      }
+    },
+    "categories": {
+      "type": "paper-street-categories",
+      "settings": {
+        "eyebrow": "SHOP BY CATEGORY",
+        "heading": "Shop the Street"
+      }
+    }
   },
-  "order": ["hero","categories","features","story","trust"]
+  "order": [
+    "hero",
+    "categories"
+  ]
 }
