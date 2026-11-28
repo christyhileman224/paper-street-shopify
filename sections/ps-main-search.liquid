@@ -1,0 +1,12 @@
+<section class="ps-page"><div class="ps-page__inner"><h1>Search Paper Street</h1><form action="{{ routes.search_url }}" method="get" role="search" class="ps-search-form"><input type="search" name="q" value="{{ search.terms | escape }}" placeholder="Search cards, players, wax and more"><input type="hidden" name="type" value="product"><button class="ps-action" type="submit">Search</button></form>{% if search.performed %}<p>{{ search.results_count }} results for “{{ search.terms | escape }}”</p>{% paginate search.results by 24 %}<div class="ps-products">{% for item in search.results %}{% if item.object_type == 'product' %}{% render 'ps-product-card', product: item %}{% endif %}{% else %}<p>No matching products found.</p>{% endfor %}</div>{% render 'ps-pagination', paginate: paginate %}{% endpaginate %}{% endif %}</div></section>
+{% schema %}
+{
+  "name": "PS Search",
+  "settings": [],
+  "presets": [
+    {
+      "name": "PS Search"
+    }
+  ]
+}
+{% endschema %}
