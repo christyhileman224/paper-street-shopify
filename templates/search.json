@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "main": {
+      "type": "ps-main-search",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
