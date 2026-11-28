@@ -91,6 +91,7 @@
       "type": "paper-street-story",
       "name": "Paper Street story",
       "settings": {
+        "image": "shopify://shop_images/Ricky_Bottalico_cropped.jpg",
         "eyebrow": "ABOUT PAPER STREET",
         "heading": "FROM THE SHOW FLOOR TO YOUR DOOR.",
         "text": "<p>Paper Street Card Co. is a collectors shop specializing in sports cards, autographs, memorabilia, wax and more. Find us at card shows and online—always buying, selling and trading.</p>",
