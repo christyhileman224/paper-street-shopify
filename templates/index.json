@@ -62,7 +62,7 @@
           "settings": {
             "image": "shopify://shop_images/raw_single.jpg",
             "title": "Raw Singles",
-            "link": ""
+            "link": "shopify://collections/raw-singles"
           }
         },
         "category_ymHNni": {
@@ -70,7 +70,7 @@
           "settings": {
             "image": "shopify://shop_images/Consignment.jpg",
             "title": "Consignment",
-            "link": ""
+            "link": "shopify://collections/consignment"
           }
         }
       },
