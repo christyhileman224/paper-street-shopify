@@ -87,6 +87,48 @@
         "heading": "Shop the Street"
       }
     },
+    "paper_street_feature_panels_pgqwxR": {
+      "type": "paper-street-feature-panels",
+      "blocks": {
+        "panel_9qEhRP": {
+          "type": "panel",
+          "settings": {
+            "image": "shopify://shop_images/Griffey.jpg",
+            "heading": "Featured Slabs",
+            "text": "Iconic players. Investment grade.",
+            "button_label": "Shop Graded",
+            "link": ""
+          }
+        },
+        "panel_TTTkYC": {
+          "type": "panel",
+          "settings": {
+            "image": "shopify://shop_images/harrison_bader_autographed_bat2_d2e1713a-ed92-40bc-bd92-8bb38e4a04bd.jpg",
+            "heading": "Autographed Memorabilia",
+            "text": "Helmets, jerseys, footballs & more.",
+            "button_label": "Shop Autographs",
+            "link": ""
+          }
+        },
+        "panel_aU4P3J": {
+          "type": "panel",
+          "settings": {
+            "image": "shopify://shop_images/1990-fleer-basketball-shows_exclusive_147cc648-72b9-42c5-b480-e0783dedd3a2.jpg",
+            "heading": "Wax & Breaks",
+            "text": "Sealed product. Big hits.",
+            "button_label": "Shop Wax",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "panel_9qEhRP",
+        "panel_TTTkYC",
+        "panel_aU4P3J"
+      ],
+      "name": "PS Feature Panels",
+      "settings": {}
+    },
     "paper_street_story_rRAMrd": {
       "type": "paper-street-story",
       "name": "Paper Street story",
@@ -143,55 +185,13 @@
       ],
       "name": "Paper Street trust bar",
       "settings": {}
-    },
-    "paper_street_feature_panels_pgqwxR": {
-      "type": "paper-street-feature-panels",
-      "blocks": {
-        "panel_9qEhRP": {
-          "type": "panel",
-          "settings": {
-            "image": "shopify://shop_images/Griffey.jpg",
-            "heading": "Featured Slabs",
-            "text": "Iconic players. Investment grade.",
-            "button_label": "Shop Graded",
-            "link": ""
-          }
-        },
-        "panel_TTTkYC": {
-          "type": "panel",
-          "settings": {
-            "image": "shopify://shop_images/harrison_bader_autographed_bat2_d2e1713a-ed92-40bc-bd92-8bb38e4a04bd.jpg",
-            "heading": "Autographed Memorabilia",
-            "text": "Helmets, jerseys, footballs & more.",
-            "button_label": "Shop Autographs",
-            "link": ""
-          }
-        },
-        "panel_aU4P3J": {
-          "type": "panel",
-          "settings": {
-            "image": "shopify://shop_images/1990-fleer-basketball-shows_exclusive_147cc648-72b9-42c5-b480-e0783dedd3a2.jpg",
-            "heading": "Wax & Breaks",
-            "text": "Sealed product. Big hits.",
-            "button_label": "Shop Wax",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "panel_9qEhRP",
-        "panel_TTTkYC",
-        "panel_aU4P3J"
-      ],
-      "name": "PS Feature Panels",
-      "settings": {}
     }
   },
   "order": [
     "hero",
     "categories",
+    "paper_street_feature_panels_pgqwxR",
     "paper_street_story_rRAMrd",
-    "paper_street_trust_bar_Lem6UK",
-    "paper_street_feature_panels_pgqwxR"
+    "paper_street_trust_bar_Lem6UK"
   ]
 }
