@@ -25,11 +25,11 @@
     "categories": {
       "type": "paper-street-categories",
       "blocks": {
-        "category_ymHNni": {
+        "category_pBHRqL": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Consignment.jpg",
-            "title": "Consignment",
+            "image": "shopify://shop_images/wax.jpg",
+            "title": "Wax & Breaks",
             "link": ""
           }
         },
@@ -41,11 +41,11 @@
             "link": ""
           }
         },
-        "category_pBHRqL": {
+        "category_TnJ9RE": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/wax.jpg",
-            "title": "Wax & Breaks",
+            "image": "shopify://shop_images/slabs.jpg",
+            "title": "Graded Cards",
             "link": ""
           }
         },
@@ -65,22 +65,22 @@
             "link": ""
           }
         },
-        "category_TnJ9RE": {
+        "category_ymHNni": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/slabs.jpg",
-            "title": "Graded Cards",
+            "image": "shopify://shop_images/Consignment.jpg",
+            "title": "Consignment",
             "link": ""
           }
         }
       },
       "block_order": [
-        "category_ymHNni",
-        "category_Dipa4N",
         "category_pBHRqL",
+        "category_Dipa4N",
+        "category_TnJ9RE",
         "category_g4tepQ",
         "category_6hcfm3",
-        "category_TnJ9RE"
+        "category_ymHNni"
       ],
       "settings": {
         "eyebrow": "SHOP BY CATEGORY",
