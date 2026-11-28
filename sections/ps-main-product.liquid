@@ -1,0 +1,12 @@
+<section class="ps-page"><div class="ps-page__inner"><div class="ps-product-detail"><div class="ps-product-detail__media">{% if product.featured_image %}{{ product.featured_image | image_url: width: 1200 | image_tag: loading: 'eager', widths: '360, 600, 900, 1200', sizes: '(min-width: 800px) 50vw, 100vw' }}{% else %}<div class="ps-empty-image">Photo coming soon</div>{% endif %}{% for image in product.images offset: 1 limit: 8 %}{{ image | image_url: width: 600 | image_tag: loading: 'lazy', widths: '240, 480, 600' }}{% endfor %}</div><div><p class="ps-eyebrow">PAPER STREET CARD CO.</p><h1>{{ product.title | escape }}</h1><p class="ps-price">{{ product.selected_or_first_available_variant.price | money }}</p>{% if product.description != blank %}<div class="ps-description">{{ product.description }}</div>{% endif %}{% form 'product', product %}<label for="ps-variant">Option</label><select id="ps-variant" name="id">{% for variant in product.variants %}<option value="{{ variant.id }}" {% if variant == product.selected_or_first_available_variant %}selected{% endif %} {% unless variant.available %}disabled{% endunless %}>{{ variant.title | escape }} — {{ variant.price | money }}{% unless variant.available %} (Sold out){% endunless %}</option>{% endfor %}</select><label for="ps-quantity">Quantity</label><input id="ps-quantity" name="quantity" type="number" min="1" value="1"><button type="submit" class="ps-action" {% unless product.available %}disabled{% endunless %}>{% if product.available %}Add to cart{% else %}Sold out{% endif %}</button>{% endform %}</div></div></div></section>
+{% schema %}
+{
+  "name": "PS Product",
+  "settings": [],
+  "presets": [
+    {
+      "name": "PS Product"
+    }
+  ]
+}
+{% endschema %}
