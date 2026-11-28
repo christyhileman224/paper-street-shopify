@@ -142,12 +142,52 @@
       ],
       "name": "Paper Street trust bar",
       "settings": {}
+    },
+    "paper_street_feature_panels_pgqwxR": {
+      "type": "paper-street-feature-panels",
+      "blocks": {
+        "panel_9qEhRP": {
+          "type": "panel",
+          "settings": {
+            "heading": "Featured Slabs",
+            "text": "Iconic players. Investment grade.",
+            "button_label": "Shop Graded",
+            "link": ""
+          }
+        },
+        "panel_TTTkYC": {
+          "type": "panel",
+          "settings": {
+            "heading": "Autographed Memorabilia",
+            "text": "Helmets, jerseys, footballs & more.",
+            "button_label": "Shop Autographs",
+            "link": ""
+          }
+        },
+        "panel_aU4P3J": {
+          "type": "panel",
+          "settings": {
+            "heading": "Wax & Breaks",
+            "text": "Sealed product. Big hits.",
+            "button_label": "Shop Wax",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "panel_9qEhRP",
+        "panel_TTTkYC",
+        "panel_aU4P3J"
+      ],
+      "name": "PS Feature Panels",
+      "settings": {}
     }
   },
   "order": [
     "hero",
     "categories",
     "paper_street_story_rRAMrd",
-    "paper_street_trust_bar_Lem6UK"
+    "paper_street_trust_bar_Lem6UK",
+    "paper_street_feature_panels_pgqwxR"
   ]
 }
