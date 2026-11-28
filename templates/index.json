@@ -54,7 +54,7 @@
           "settings": {
             "image": "shopify://shop_images/autos.jpg",
             "title": "Autographs",
-            "link": ""
+            "link": "shopify://collections/autographs"
           }
         },
         "category_6hcfm3": {
