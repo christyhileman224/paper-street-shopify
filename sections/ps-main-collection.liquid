@@ -1,4 +1,54 @@
-<section class="ps-page ps-catalog"><div class="ps-page__inner"><p class="ps-eyebrow">SHOP THE STREET</p><h1>{{ collection.title | escape }}</h1>{% if collection.description != blank %}<div class="ps-description">{{ collection.description }}</div>{% endif %}{% paginate collection.products by 24 %}<div class="ps-products">{% for product in collection.products %}{% render 'ps-product-card', product: product %}{% else %}<p>No products in this collection yet. Check back soon.</p>{% endfor %}</div>{% render 'ps-pagination', paginate: paginate %}{% endpaginate %}</div></section>
+
+<section class="ps-page ps-catalog">
+  <div class="ps-page__inner">
+
+    <p class="ps-eyebrow">SHOP THE STREET</p>
+
+    <h1>{{ collection.title | escape }}</h1>
+
+    {% if collection.description != blank %}
+      <div class="ps-description">
+        {{ collection.description }}
+      </div>
+    {% endif %}
+
+    {% paginate collection.products by 24 %}
+
+      {% if collection.products.size > 0 %}
+
+        <div class="ps-products">
+          {% for product in collection.products %}
+            {% render 'ps-product-card', product: product %}
+          {% endfor %}
+        </div>
+
+        {% render 'ps-pagination', paginate: paginate %}
+
+      {% else %}
+
+        <div class="ps-coming-soon">
+          <p class="ps-eyebrow">STAY TUNED</p>
+
+          <h2>Online Shopping Coming Soon!</h2>
+
+          <p>
+            We're getting our inventory ready!
+            In the meantime, explore Paper Street Card Co.
+            and contact us to buy, sell, or trade.
+          </p>
+
+          <a href="/pages/contact" class="ps-action">
+            Contact Paper Street
+          </a>
+        </div>
+
+      {% endif %}
+
+    {% endpaginate %}
+
+  </div>
+</section>
+
 {% schema %}
 {
   "name": "PS Collection",
@@ -10,3 +60,4 @@
   ]
 }
 {% endschema %}
+
