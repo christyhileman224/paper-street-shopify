@@ -1,0 +1,23 @@
+<section class="ps-page ps-info-page" aria-labelledby="ps-page-title">
+  <div class="ps-page__inner">
+    <p class="ps-eyebrow">Paper Street Card Co.</p>
+    <h1 id="ps-page-title">{{ page.title | escape }}</h1>
+    <div class="ps-info-page__content rte">{{ page.content }}</div>
+  </div>
+</section>
+
+{% stylesheet %}
+.ps-info-page__content{max-width:850px;line-height:1.75;color:#f5f1e8}
+.ps-info-page__content h2,.ps-info-page__content h3{color:#f5f1e8;margin-top:1.8em}
+.ps-info-page__content a{color:#ff477e;text-decoration:underline;text-underline-offset:3px}
+.ps-info-page__content p,.ps-info-page__content li{line-height:1.75}
+.ps-info-page__content ul{padding-left:1.5em}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "PS Page Content",
+  "settings": [],
+  "presets": [{"name": "PS Page Content"}]
+}
+{% endschema %}
