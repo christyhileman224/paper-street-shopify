@@ -1,0 +1,9 @@
+{
+  "sections": {
+    "main": {
+      "type": "ps-page-content",
+      "settings": {}
+    }
+  },
+  "order": ["main"]
+}
