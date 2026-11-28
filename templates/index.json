@@ -150,6 +150,7 @@
         "panel_9qEhRP": {
           "type": "panel",
           "settings": {
+            "image": "shopify://shop_images/Griffey.jpg",
             "heading": "Featured Slabs",
             "text": "Iconic players. Investment grade.",
             "button_label": "Shop Graded",
