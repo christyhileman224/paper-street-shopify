@@ -1,12 +1,51 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "ps-page-content",
-      "disabled": false,
       "settings": {}
+    },
+    "ps_social_videos_TPfVmi": {
+      "type": "ps-social-videos",
+      "blocks": {
+        "video_jWqBNN": {
+          "type": "video",
+          "settings": {
+            "title": "Paper Street Highlights",
+            "platform": "instagram",
+            "video_url": ""
+          }
+        },
+        "video_aaJPGa": {
+          "type": "video",
+          "settings": {
+            "title": "Paper Street Highlights",
+            "platform": "instagram",
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_jWqBNN",
+        "video_aaJPGa"
+      ],
+      "name": "PS Social Videos",
+      "settings": {
+        "heading": "See Paper Street in Action",
+        "description": "From the show floor to your front door. Get a look at Paper Street Card Co. in action."
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "ps_social_videos_TPfVmi"
   ]
 }
