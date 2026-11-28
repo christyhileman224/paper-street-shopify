@@ -2,8 +2,11 @@
   "sections": {
     "main": {
       "type": "ps-page-content",
+      "disabled": false,
       "settings": {}
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }
