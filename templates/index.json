@@ -159,6 +159,7 @@
         "panel_TTTkYC": {
           "type": "panel",
           "settings": {
+            "image": "shopify://shop_images/harrison_bader_autographed_bat2_d2e1713a-ed92-40bc-bd92-8bb38e4a04bd.jpg",
             "heading": "Autographed Memorabilia",
             "text": "Helmets, jerseys, footballs & more.",
             "button_label": "Shop Autographs",
@@ -168,6 +169,7 @@
         "panel_aU4P3J": {
           "type": "panel",
           "settings": {
+            "image": "shopify://shop_images/1990-fleer-basketball-shows_exclusive_147cc648-72b9-42c5-b480-e0783dedd3a2.jpg",
             "heading": "Wax & Breaks",
             "text": "Sealed product. Big hits.",
             "button_label": "Shop Wax",
