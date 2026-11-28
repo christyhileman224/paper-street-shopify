@@ -30,7 +30,7 @@
           "settings": {
             "image": "shopify://shop_images/wax.jpg",
             "title": "Wax & Breaks",
-            "link": ""
+            "link": "shopify://collections/wax-breaks"
           }
         },
         "category_Dipa4N": {
@@ -38,7 +38,7 @@
           "settings": {
             "image": "shopify://shop_images/memorbelia.jpg",
             "title": "Memorabilia",
-            "link": ""
+            "link": "shopify://collections/memorabilia"
           }
         },
         "category_TnJ9RE": {
