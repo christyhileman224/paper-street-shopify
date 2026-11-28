@@ -1,0 +1,12 @@
+<section class="ps-page"><div class="ps-page__inner"><h1>Shop the Street</h1><div class="ps-products">{% for collection in collections %}{% unless collection.handle == 'frontpage' %}<a class="ps-card" href="{{ collection.url }}">{% if collection.featured_image %}{{ collection.featured_image | image_url: width: 650 | image_tag: loading: 'lazy' }}{% else %}<div class="ps-empty-image">Paper Street</div>{% endif %}<h2>{{ collection.title | escape }}</h2></a>{% endunless %}{% else %}<p>Collections coming soon.</p>{% endfor %}</div></div></section>
+{% schema %}
+{
+  "name": "PS Collections",
+  "settings": [],
+  "presets": [
+    {
+      "name": "PS Collections"
+    }
+  ]
+}
+{% endschema %}
