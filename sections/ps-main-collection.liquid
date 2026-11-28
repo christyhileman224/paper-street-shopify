@@ -1,0 +1,12 @@
+<section class="ps-page ps-catalog"><div class="ps-page__inner"><p class="ps-eyebrow">SHOP THE STREET</p><h1>{{ collection.title | escape }}</h1>{% if collection.description != blank %}<div class="ps-description">{{ collection.description }}</div>{% endif %}{% paginate collection.products by 24 %}<div class="ps-products">{% for product in collection.products %}{% render 'ps-product-card', product: product %}{% else %}<p>No products in this collection yet. Check back soon.</p>{% endfor %}</div>{% render 'ps-pagination', paginate: paginate %}{% endpaginate %}</div></section>
+{% schema %}
+{
+  "name": "PS Collection",
+  "settings": [],
+  "presets": [
+    {
+      "name": "PS Collection"
+    }
+  ]
+}
+{% endschema %}
