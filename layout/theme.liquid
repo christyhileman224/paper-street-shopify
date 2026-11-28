@@ -11,7 +11,22 @@
 </head>
 <body>
   <header class="ps-header">
-    <a class="ps-brand" href="{{ routes.root_url }}">PAPER STREET <span>CARD CO.</span></a>
+   
+<a class="ps-brand" href="{{ routes.root_url }}" aria-label="Paper Street Card Co. home">
+  {% if settings.ps_logo != blank %}
+    {{
+      settings.ps_logo
+      | image_url: width: 600
+      | image_tag:
+        class: 'ps-brand__logo',
+        loading: 'eager',
+        alt: 'Paper Street Card Co.'
+    }}
+  {% else %}
+    PAPER STREET <span>CARD CO.</span>
+  {% endif %}
+</a>
+
     <nav class="ps-nav" aria-label="Main navigation">
       <a href="{{ routes.all_products_collection_url }}">Shop</a>
       <a href="/collections">Collections</a>
