@@ -64,3 +64,32 @@
     right: 10px;
   }
 }
+
+/* Paper Street header logo sizing */
+
+.ps-header .ps-brand {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 180px;
+}
+
+.ps-header .ps-brand__logo {
+  display: block;
+  width: auto;
+  height: 64px;
+  max-width: 180px;
+  object-fit: contain;
+}
+
+@media (max-width: 760px) {
+  .ps-header .ps-brand {
+    max-width: 140px;
+  }
+
+  .ps-header .ps-brand__logo {
+    height: 48px;
+    max-width: 140px;
+  }
+}
