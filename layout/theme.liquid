@@ -4,9 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#0b0d0e">
-  <title>{{ page_title }}{% unless page_title contains shop.name %} – {{ shop.name }}{% endunless %}</title>
+  <title>{{ page_title }}{% unless page_title contains shop.name %} - {{ shop.name }}{% endunless %}</title>
   {{ content_for_header }}
   {{ 'paper-street.css' | asset_url | stylesheet_tag }}
+  {{ 'ps-shopping.css' | asset_url | stylesheet_tag }}
 </head>
 <body>
   <header class="ps-header">
